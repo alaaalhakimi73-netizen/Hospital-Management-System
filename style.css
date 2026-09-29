@@ -1,0 +1,248 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: #f6f9fc;
+    color: #222;
+    direction: rtl;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: white;
+    padding-bottom: 60px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+}
+
+.navbar button {
+    background: white;
+    color: #2563eb;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    transform: scale(1.05);
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    background: #fff;
+    color: #2563eb;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+/* ===== DOCTORS ===== */
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ===== DEPARTMENTS ===== */
+.department-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.department-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.department-card:hover {
+    transform: scale(1.03);
+}
+
+.department-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===== CONTACT ===== */
+.contact-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}

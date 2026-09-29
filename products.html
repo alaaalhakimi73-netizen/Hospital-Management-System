@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛍️ المنتجات</h1>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="cart.html">السلة 🛒 (<span id="count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- الفلاتر -->
+    <section class="filters">
+        <button onclick="filter('all')">الكل</button>
+        <button onclick="filter('network')">شبكات</button>
+        <button onclick="filter('security')">أمن</button>
+        <button onclick="filter('web')">ويب</button>
+        <button onclick="filter('tools')">أدوات</button>
+    </section>
+
+    <!-- المنتجات -->
+    <section class="grid">
+
+        <div class="card" data-cat="network">
+            <h3>Nmap Scanner</h3>
+            <div class="actions">
+                <button class="add" onclick="add('Nmap Scanner')">إضافة</button>
+                <button class="edit" onclick="editProduct('Nmap Scanner')">تعديل</button>
+                <button class="delete" onclick="removeProduct('Nmap Scanner')">حذف</button>
+            </div>
+        </div>
+
+        <div class="card" data-cat="network">
+            <h3>Wireshark</h3>
+            <div class="actions">
+                <button class="add" onclick="add('Wireshark')">إضافة</button>
+                <button class="edit" onclick="editProduct('Wireshark')">تعديل</button>
+                <button class="delete" onclick="removeProduct('Wireshark')">حذف</button>
+            </div>
+        </div>
+
+        <div class="card" data-cat="security">
+            <h3>Metasploit</h3>
+            <div class="actions">
+                <button class="add" onclick="add('Metasploit')">إضافة</button>
+                <button class="edit" onclick="editProduct('Metasploit')">تعديل</button>
+                <button class="delete" onclick="removeProduct('Metasploit')">حذف</button>
+            </div>
+        </div>
+
+        <div class="card" data-cat="web">
+            <h3>Burp Suite</h3>
+            <div class="actions">
+                <button class="add" onclick="add('Burp Suite')">إضافة</button>
+                <button class="edit" onclick="editProduct('Burp Suite')">تعديل</button>
+                <button class="delete" onclick="removeProduct('Burp Suite')">حذف</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
